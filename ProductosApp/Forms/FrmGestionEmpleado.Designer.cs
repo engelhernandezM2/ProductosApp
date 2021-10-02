@@ -29,6 +29,7 @@ namespace ProductosApp.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionEmpleado));
             this.rtbEmpleados = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,7 +53,7 @@ namespace ProductosApp.Forms
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.panel2.Location = new System.Drawing.Point(434, 12);
+            this.panel2.Location = new System.Drawing.Point(329, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(21, 34);
             this.panel2.TabIndex = 2;
@@ -74,9 +75,11 @@ namespace ProductosApp.Forms
             this.btnCrearDocente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearDocente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearDocente.ForeColor = System.Drawing.Color.White;
+            this.btnCrearDocente.Image = ((System.Drawing.Image)(resources.GetObject("btnCrearDocente.Image")));
+            this.btnCrearDocente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCrearDocente.Location = new System.Drawing.Point(59, 12);
             this.btnCrearDocente.Name = "btnCrearDocente";
-            this.btnCrearDocente.Size = new System.Drawing.Size(126, 34);
+            this.btnCrearDocente.Size = new System.Drawing.Size(218, 34);
             this.btnCrearDocente.TabIndex = 0;
             this.btnCrearDocente.Text = "Crear Docente ";
             this.btnCrearDocente.UseVisualStyleBackColor = true;
@@ -103,11 +106,13 @@ namespace ProductosApp.Forms
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Location = new System.Drawing.Point(451, 12);
+            this.btnAdmin.Image = global::ProductosApp.Properties.Resources.clientes;
+            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.Location = new System.Drawing.Point(346, 12);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(126, 34);
+            this.btnAdmin.Size = new System.Drawing.Size(236, 34);
             this.btnAdmin.TabIndex = 2;
-            this.btnAdmin.Text = "Administrativo";
+            this.btnAdmin.Text = "      Crear Administrativo";
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
