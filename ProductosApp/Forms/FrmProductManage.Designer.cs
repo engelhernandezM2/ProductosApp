@@ -59,7 +59,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnNew);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 327);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(582, 29);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -67,7 +67,7 @@
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(505, 2);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 24);
             this.btnDelete.TabIndex = 0;
@@ -77,7 +77,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(426, 2);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 24);
             this.btnUpdate.TabIndex = 1;
@@ -87,7 +87,7 @@
             // btnNew
             // 
             this.btnNew.Location = new System.Drawing.Point(347, 2);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(2);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(75, 24);
             this.btnNew.TabIndex = 2;
@@ -105,7 +105,7 @@
             "Rango Precio",
             "Fecha Vencimiento"});
             this.cmbFinder.Location = new System.Drawing.Point(8, 7);
-            this.cmbFinder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbFinder.Margin = new System.Windows.Forms.Padding(2);
             this.cmbFinder.Name = "cmbFinder";
             this.cmbFinder.Size = new System.Drawing.Size(146, 21);
             this.cmbFinder.TabIndex = 1;
@@ -115,7 +115,7 @@
             // 
             this.pnlFindById.Controls.Add(this.txtId);
             this.pnlFindById.Location = new System.Drawing.Point(158, 8);
-            this.pnlFindById.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlFindById.Margin = new System.Windows.Forms.Padding(2);
             this.pnlFindById.Name = "pnlFindById";
             this.pnlFindById.Size = new System.Drawing.Size(322, 26);
             this.pnlFindById.TabIndex = 2;
@@ -124,7 +124,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(2, 2);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(318, 20);
             this.txtId.TabIndex = 0;
@@ -133,7 +133,7 @@
             // 
             this.pnlMeasureUnit.Controls.Add(this.cmbMeasureUnit);
             this.pnlMeasureUnit.Location = new System.Drawing.Point(158, 8);
-            this.pnlMeasureUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlMeasureUnit.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMeasureUnit.Name = "pnlMeasureUnit";
             this.pnlMeasureUnit.Size = new System.Drawing.Size(322, 26);
             this.pnlMeasureUnit.TabIndex = 3;
@@ -143,7 +143,7 @@
             // 
             this.cmbMeasureUnit.FormattingEnabled = true;
             this.cmbMeasureUnit.Location = new System.Drawing.Point(4, 2);
-            this.cmbMeasureUnit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbMeasureUnit.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMeasureUnit.Name = "cmbMeasureUnit";
             this.cmbMeasureUnit.Size = new System.Drawing.Size(318, 21);
             this.cmbMeasureUnit.TabIndex = 0;
@@ -153,7 +153,7 @@
             this.pnlRangePrice.Controls.Add(this.nudToPrice);
             this.pnlRangePrice.Controls.Add(this.nudFromPrice);
             this.pnlRangePrice.Location = new System.Drawing.Point(158, 6);
-            this.pnlRangePrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlRangePrice.Margin = new System.Windows.Forms.Padding(2);
             this.pnlRangePrice.Name = "pnlRangePrice";
             this.pnlRangePrice.Size = new System.Drawing.Size(322, 26);
             this.pnlRangePrice.TabIndex = 4;
@@ -162,7 +162,7 @@
             // nudToPrice
             // 
             this.nudToPrice.Location = new System.Drawing.Point(170, 2);
-            this.nudToPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudToPrice.Margin = new System.Windows.Forms.Padding(2);
             this.nudToPrice.Name = "nudToPrice";
             this.nudToPrice.Size = new System.Drawing.Size(150, 20);
             this.nudToPrice.TabIndex = 1;
@@ -170,7 +170,7 @@
             // nudFromPrice
             // 
             this.nudFromPrice.Location = new System.Drawing.Point(2, 2);
-            this.nudFromPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudFromPrice.Margin = new System.Windows.Forms.Padding(2);
             this.nudFromPrice.Name = "nudFromPrice";
             this.nudFromPrice.Size = new System.Drawing.Size(150, 20);
             this.nudFromPrice.TabIndex = 0;
@@ -179,7 +179,7 @@
             // 
             this.pnlCaducity.Controls.Add(this.dtpCaducity);
             this.pnlCaducity.Location = new System.Drawing.Point(159, 6);
-            this.pnlCaducity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCaducity.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCaducity.Name = "pnlCaducity";
             this.pnlCaducity.Size = new System.Drawing.Size(322, 26);
             this.pnlCaducity.TabIndex = 4;
@@ -188,15 +188,16 @@
             // dtpCaducity
             // 
             this.dtpCaducity.Location = new System.Drawing.Point(2, 4);
-            this.dtpCaducity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpCaducity.Margin = new System.Windows.Forms.Padding(2);
             this.dtpCaducity.Name = "dtpCaducity";
             this.dtpCaducity.Size = new System.Drawing.Size(209, 20);
             this.dtpCaducity.TabIndex = 0;
+            this.dtpCaducity.ValueChanged += new System.EventHandler(this.dtpCaducity_ValueChanged);
             // 
             // rtbProductView
             // 
             this.rtbProductView.Location = new System.Drawing.Point(9, 39);
-            this.rtbProductView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtbProductView.Margin = new System.Windows.Forms.Padding(2);
             this.rtbProductView.Name = "rtbProductView";
             this.rtbProductView.ReadOnly = true;
             this.rtbProductView.Size = new System.Drawing.Size(583, 284);
@@ -215,9 +216,10 @@
             this.Controls.Add(this.pnlFindById);
             this.Controls.Add(this.cmbFinder);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmProductManage";
             this.Text = "FrmProductManage";
+            this.Load += new System.EventHandler(this.FrmProductManage_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.pnlFindById.ResumeLayout(false);
             this.pnlFindById.PerformLayout();

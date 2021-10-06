@@ -1,4 +1,10 @@
-﻿using Infraestructure.Productos;
+﻿using AppCore.Interfaces;
+using AppCore.Services;
+using Autofac;
+using Domain.Enums;
+using Domain.Interfaces;
+using Infraestructure.Empleados;
+using Infraestructure.Productos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +19,10 @@ namespace ProductosApp.Forms
 {
     public partial class FrmProductManage : Form
     {
-        private ProductoModel productoModel;
+        private ProductoModel pModel;
         public FrmProductManage()
         {
-            productoModel = new ProductoModel();
+            pModel = new ProductoModel();
             InitializeComponent();
         }
 
@@ -54,10 +60,31 @@ namespace ProductosApp.Forms
         private void BtnNew_Click(object sender, EventArgs e)
         {
             FrmProducto frmProducto = new FrmProducto();
-            frmProducto.PModel = productoModel;
+            frmProducto.PModel = pModel;
             frmProducto.ShowDialog();
 
-            rtbProductView.Text = productoModel.GetProductosAsJson();
+            rtbProductView.Text = pModel.GetProductosAsJson();
         }
+
+        private void FrmProductManage_Load(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void dtpCaducity_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    var builder = new ContainerBuilder();
+
+        //    builder.RegisterType<EmpleadoModel>().As<IEmpleadoModel>();
+        //    builder.RegisterType<EmpleadoServices>().As<IEmpleadoServicio>();
+        //    var container = builder.Build();
+        //    FrmGestionEmpleado f1 = new FrmGestionEmpleado(container.Resolve<IEmpleadoServicio>());
+        //    f1.ShowDialog();
+        //}
     }
 }

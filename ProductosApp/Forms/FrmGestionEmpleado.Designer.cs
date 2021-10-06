@@ -48,7 +48,6 @@ namespace ProductosApp.Forms
             this.rtbEmpleados.Size = new System.Drawing.Size(581, 326);
             this.rtbEmpleados.TabIndex = 5;
             this.rtbEmpleados.Text = "";
-            this.rtbEmpleados.TextChanged += new System.EventHandler(this.rtbEmpleados_TextChanged);
             // 
             // panel2
             // 
@@ -65,7 +64,7 @@ namespace ProductosApp.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(21, 34);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+       
             // 
             // btnCrearDocente
             // 
@@ -126,6 +125,7 @@ namespace ProductosApp.Forms
             this.Controls.Add(this.PnlEmpleado);
             this.Name = "FrmGestionEmpleado";
             this.Text = "Gestion De Empleaos";
+            this.Load += new System.EventHandler(this.FrmGestionEmpleado_Load);
             this.PnlEmpleado.ResumeLayout(false);
             this.ResumeLayout(false);
 

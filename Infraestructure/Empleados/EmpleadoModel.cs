@@ -1,4 +1,5 @@
 ﻿using Domain.Entities.Empleados;
+using Domain.Interfaces;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -6,10 +7,9 @@ using System.Text;
 
 namespace Infraestructure.Empleados
 {
-    public class EmpleadoModel
+    public class EmpleadoModel : IEmpleadoModel
     {
         private Empleado[] empleados;
-
         public void Create(Empleado e)
         {
             if(empleados == null)
@@ -31,12 +31,12 @@ namespace Infraestructure.Empleados
             return empleados == null ? 0 : empleados[empleados.Length - 1].Id;
         }
 
-        public Empleado[] GetEmpleados()
+        public Empleado [] FindAll()
         {
             return empleados;
         }
 
-        private int GetIndexById(int id)
+       /*private int GetIndexById(int id)
         {
             if (id <= 0)
             {
@@ -57,22 +57,25 @@ namespace Infraestructure.Empleados
             }
             return index;
         }
-
-        public Empleado GetProductoByid(int id)
-        {
-            if (id <= 0)
-            {
-                throw new ArgumentException("Ingrese un id ");
-            }
-            int index = GetIndexById(id);
-            return index <= 0 ? null : empleados[index];
-        }
-
-
-
+       */
         public string GetEmpleadosAsJson()
         {
             return JsonConvert.SerializeObject(empleados);
+        }
+
+        public Empleado FindById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Update(Empleado t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Delete(Empleado t)
+        {
+            throw new NotImplementedException();
         }
     }
 }

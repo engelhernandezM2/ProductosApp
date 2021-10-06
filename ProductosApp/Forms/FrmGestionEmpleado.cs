@@ -1,4 +1,6 @@
-﻿using Domain.Entities.Empleados;
+﻿using AppCore.Interfaces;
+using AppCore.Services;
+using Domain.Entities.Empleados;
 using Infraestructure.Empleados;
 using System;
 using System.Collections.Generic;
@@ -14,50 +16,52 @@ namespace ProductosApp.Forms
 {
     public partial class FrmGestionEmpleado : Form
     {
-
-        private EmpleadoModel eModel;
-        public FrmGestionEmpleado()
+        private IEmpleadoServicio eService;
+       // private EmpleadoModel eModel;
+        public FrmGestionEmpleado(IEmpleadoServicio eService)
         {
-            eModel = new EmpleadoModel();
+            this.eService = eService;
+            //eModel = new EmpleadoModel();
             InitializeComponent();
         }
 
         private void btnCrearDocente_Click(object sender, EventArgs e)
         {
-            Empleado emp = new Docente()
+            Empleado emp = new Docente(11012, "001-170705-1012X", "Engel Alexander", "Hernandez Baca",
+                37000.99M, DateTime.Now)
             {
-                Id = eModel.GetLastEmpleadoId() + 1,
-                Codigo = 11012,
-                Cedula = "001-170705-1012X",
-                Nombres = "Engel Alexander",
-                Apellidos = "Hernandez Baca",
-                Salario = 37000.99M,
-                FechaContratacion = DateTime.Now,
+                Id = eService.GetLastEmpleadoid() + 1,
                 CategoriaDocente = Domain.Enums.CategoriaDocente.Titular
             };
 
-            eModel.Create(emp);
+            eService.Create(emp);
             PrintEmpleado();
-            rtbEmpleados.Text += eModel.GetEmpleadosAsJson();
+           // rtbEmpleados.Text += eService.GetEmpleadosAsJson();
         }
 
-
-
-        private void rtbEmpleados_TextChanged(object sender, EventArgs e)
+        private void btnAdmin_Click(object sender, EventArgs e)
         {
+            Empleado emp = new Administrativo(1000, "001-000000-0000X", "Cristhel Lucia " +""
+               , "Hernandez Elizondo ",
+                24000.99M, DateTime.Now)
+            {
+                Id = eService.GetLastEmpleadoid() + 1,
+                HorasExtras = 10.5f
+            };
 
+            eService.Create(emp);
+            PrintEmpleado();
+            //rtbEmpleados.Text += eService.GetEmpleadosAsJson();
         }
-
         public void PrintEmpleado()
         {
-            Empleado[] empleados = eModel.GetEmpleados();
+            Empleado[] empleados = eService.FindAll();
 
             if (empleados == null)
             {
-                rtbEmpleados.Text = "No hay elementos a mostrar.";
+                rtbEmpleados.Text = "No Hay Empleados para Mostrar";
                 return;
             }
-
             rtbEmpleados.Text = "";
 
             foreach (Empleado e in empleados)
@@ -65,27 +69,7 @@ namespace ProductosApp.Forms
                 rtbEmpleados.AppendText(e.GetEmpleadoAsString());
             }
         }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            Empleado emp = new Administrativo()
-            {
-                Id = eModel.GetLastEmpleadoId() + 1,
-                Codigo = 1000,
-                Cedula = "001-000000-0000X",
-                Nombres = "Ana Cecilia",
-                Apellidos = "Conda Jimenez",
-                Salario = 24000.99M,
-                FechaContratacion = DateTime.Now,
-                HorasExtras = 10.5f
-            };
-
-            eModel.Create(emp);
-            PrintEmpleado();
-            rtbEmpleados.Text += eModel.GetEmpleadosAsJson();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void FrmGestionEmpleado_Load(object sender, EventArgs e)
         {
 
         }
