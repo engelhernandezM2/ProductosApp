@@ -161,31 +161,7 @@
     <None Include="Resources\compras.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LOGOS.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LOGOS1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clientes1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\compras1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\empleados1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\producto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\producto1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Minimize_Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
