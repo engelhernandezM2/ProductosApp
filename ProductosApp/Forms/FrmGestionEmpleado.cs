@@ -1,4 +1,5 @@
 ﻿using AppCore.Interfaces;
+using AppCore.Procesosss;
 using AppCore.Services;
 using Domain.Entities.Empleados;
 using Infraestructure.Empleados;
@@ -17,10 +18,12 @@ namespace ProductosApp.Forms
     public partial class FrmGestionEmpleado : Form
     {
         private IEmpleadoServicio eService;
-       // private EmpleadoModel eModel;
+        // private EmpleadoModel eModel;
+        private SalaryCalculator salaryCalculator;
         public FrmGestionEmpleado(IEmpleadoServicio eService)
         {
             this.eService = eService;
+            salaryCalculator = new SalaryCalculator();
             //eModel = new EmpleadoModel();
             InitializeComponent();
         }
@@ -67,6 +70,7 @@ namespace ProductosApp.Forms
             foreach (Empleado e in empleados)
             {
                 rtbEmpleados.AppendText(e.GetEmpleadoAsString());
+                rtbEmpleados.AppendText($"Salario neto: {salaryCalculator.CalcularSalary(e)} \n");
             }
         }
         private void FrmGestionEmpleado_Load(object sender, EventArgs e)

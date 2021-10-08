@@ -64,7 +64,6 @@ namespace ProductosApp.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(21, 34);
             this.panel1.TabIndex = 1;
-       
             // 
             // btnCrearDocente
             // 
@@ -94,7 +93,7 @@ namespace ProductosApp.Forms
             this.PnlEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlEmpleado.Location = new System.Drawing.Point(0, 0);
             this.PnlEmpleado.Name = "PnlEmpleado";
-            this.PnlEmpleado.Size = new System.Drawing.Size(605, 57);
+            this.PnlEmpleado.Size = new System.Drawing.Size(593, 57);
             this.PnlEmpleado.TabIndex = 4;
             // 
             // btnAdmin
@@ -120,7 +119,7 @@ namespace ProductosApp.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(605, 401);
+            this.ClientSize = new System.Drawing.Size(593, 390);
             this.Controls.Add(this.rtbEmpleados);
             this.Controls.Add(this.PnlEmpleado);
             this.Name = "FrmGestionEmpleado";

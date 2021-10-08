@@ -4,6 +4,7 @@ using Autofac;
 using Domain.Interfaces;
 using Infraestructure.Empleados;
 using ProductosApp.Forms;
+using ProductosApp.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace ProductosApp
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmProductManage());
+            Application.Run(new FrmLogin());
         }
     }
 }
