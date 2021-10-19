@@ -45,14 +45,14 @@ namespace ProductosApp.Forms
             this.rtbEmpleados.ForeColor = System.Drawing.Color.White;
             this.rtbEmpleados.Location = new System.Drawing.Point(12, 63);
             this.rtbEmpleados.Name = "rtbEmpleados";
-            this.rtbEmpleados.Size = new System.Drawing.Size(581, 326);
+            this.rtbEmpleados.Size = new System.Drawing.Size(511, 311);
             this.rtbEmpleados.TabIndex = 5;
             this.rtbEmpleados.Text = "";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.panel2.Location = new System.Drawing.Point(329, 12);
+            this.panel2.Location = new System.Drawing.Point(256, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(21, 34);
             this.panel2.TabIndex = 2;
@@ -60,7 +60,7 @@ namespace ProductosApp.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.panel1.Location = new System.Drawing.Point(41, 12);
+            this.panel1.Location = new System.Drawing.Point(19, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(21, 34);
             this.panel1.TabIndex = 1;
@@ -75,9 +75,9 @@ namespace ProductosApp.Forms
             this.btnCrearDocente.ForeColor = System.Drawing.Color.White;
             this.btnCrearDocente.Image = ((System.Drawing.Image)(resources.GetObject("btnCrearDocente.Image")));
             this.btnCrearDocente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCrearDocente.Location = new System.Drawing.Point(59, 12);
+            this.btnCrearDocente.Location = new System.Drawing.Point(37, 12);
             this.btnCrearDocente.Name = "btnCrearDocente";
-            this.btnCrearDocente.Size = new System.Drawing.Size(218, 34);
+            this.btnCrearDocente.Size = new System.Drawing.Size(206, 34);
             this.btnCrearDocente.TabIndex = 0;
             this.btnCrearDocente.Text = "Crear Docente ";
             this.btnCrearDocente.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@ namespace ProductosApp.Forms
             this.PnlEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlEmpleado.Location = new System.Drawing.Point(0, 0);
             this.PnlEmpleado.Name = "PnlEmpleado";
-            this.PnlEmpleado.Size = new System.Drawing.Size(593, 57);
+            this.PnlEmpleado.Size = new System.Drawing.Size(535, 57);
             this.PnlEmpleado.TabIndex = 4;
             // 
             // btnAdmin
@@ -106,7 +106,7 @@ namespace ProductosApp.Forms
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
             this.btnAdmin.Image = global::ProductosApp.Properties.Resources.clientes;
             this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(346, 12);
+            this.btnAdmin.Location = new System.Drawing.Point(273, 12);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(236, 34);
             this.btnAdmin.TabIndex = 2;
@@ -119,9 +119,10 @@ namespace ProductosApp.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(593, 390);
+            this.ClientSize = new System.Drawing.Size(535, 386);
             this.Controls.Add(this.rtbEmpleados);
             this.Controls.Add(this.PnlEmpleado);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmGestionEmpleado";
             this.Text = "Gestion De Empleaos";
             this.Load += new System.EventHandler(this.FrmGestionEmpleado_Load);

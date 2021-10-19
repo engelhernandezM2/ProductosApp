@@ -61,12 +61,12 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 327);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(582, 29);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(515, 34);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(505, 2);
+            this.btnDelete.Location = new System.Drawing.Point(438, 2);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 24);
@@ -76,7 +76,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(426, 2);
+            this.btnUpdate.Location = new System.Drawing.Point(359, 2);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 24);
@@ -86,7 +86,7 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(347, 2);
+            this.btnNew.Location = new System.Drawing.Point(280, 2);
             this.btnNew.Margin = new System.Windows.Forms.Padding(2);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(75, 24);
@@ -200,7 +200,7 @@
             this.rtbProductView.Margin = new System.Windows.Forms.Padding(2);
             this.rtbProductView.Name = "rtbProductView";
             this.rtbProductView.ReadOnly = true;
-            this.rtbProductView.Size = new System.Drawing.Size(583, 284);
+            this.rtbProductView.Size = new System.Drawing.Size(515, 284);
             this.rtbProductView.TabIndex = 3;
             this.rtbProductView.Text = "";
             // 
@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(535, 386);
             this.Controls.Add(this.pnlCaducity);
             this.Controls.Add(this.pnlMeasureUnit);
             this.Controls.Add(this.pnlRangePrice);
@@ -216,6 +216,7 @@
             this.Controls.Add(this.pnlFindById);
             this.Controls.Add(this.cmbFinder);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmProductManage";
             this.Text = "FrmProductManage";

@@ -96,28 +96,16 @@ namespace ProductosApp.Presentation
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
             if (user == TxtUser.Text && Contraseña == TxtPass.Text)
             {
-                PnlGO.Visible = true;
+                MessageBox.Show("Bienvenido");
+                FrmInterfazPresentation f1 = new FrmInterfazPresentation();
+                f1.Show();
+                this.Hide();
+            }
             }
         }
+       
         #endregion
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            var builder = new ContainerBuilder();
-            builder.RegisterType<EmpleadoModel>().As<IEmpleadoModel>();
-            builder.RegisterType<EmpleadoServices>().As<IEmpleadoServicio>();
-            var container = builder.Build();
-            FrmGestionEmpleado f1 = new FrmGestionEmpleado(container.Resolve<IEmpleadoServicio>());
-            f1.ShowDialog();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            FrmProductManage f2 = new FrmProductManage();
-            f2.ShowDialog();
-        }
     }
-}
+
