@@ -60,5 +60,10 @@ namespace ProductosApp.Presentation
         {
             AbrirFrmHijo(new FrmEStudiantes());
         }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

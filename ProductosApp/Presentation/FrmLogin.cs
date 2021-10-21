@@ -104,7 +104,12 @@ namespace ProductosApp.Presentation
                 this.Hide();
             }
             }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
+    }
        
         #endregion
     }

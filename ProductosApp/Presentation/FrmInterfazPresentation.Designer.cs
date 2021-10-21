@@ -43,12 +43,14 @@ namespace ProductosApp.Presentation
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.HoraYFecha = new System.Windows.Forms.Timer(this.components);
+            this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PnlBotones.SuspendLayout();
             this.pnlFechayHora.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -149,7 +151,7 @@ namespace ProductosApp.Presentation
             this.pnlFechayHora.Controls.Add(this.lblFecha);
             this.pnlFechayHora.Location = new System.Drawing.Point(3, 3);
             this.pnlFechayHora.Name = "pnlFechayHora";
-            this.pnlFechayHora.Size = new System.Drawing.Size(343, 36);
+            this.pnlFechayHora.Size = new System.Drawing.Size(500, 36);
             this.pnlFechayHora.TabIndex = 4;
             // 
             // lblHora
@@ -178,6 +180,7 @@ namespace ProductosApp.Presentation
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.flowLayoutPanel2.Controls.Add(this.pnlFechayHora);
+            this.flowLayoutPanel2.Controls.Add(this.BtnCerrar);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(175, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -208,6 +211,17 @@ namespace ProductosApp.Presentation
             this.HoraYFecha.Enabled = true;
             this.HoraYFecha.Tick += new System.EventHandler(this.HoraYFecha_Tick);
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Image = global::ProductosApp.Properties.Resources.cerrar;
+            this.BtnCerrar.Location = new System.Drawing.Point(509, 3);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.BtnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnCerrar.TabIndex = 5;
+            this.BtnCerrar.TabStop = false;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // FrmInterfazPresentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +230,7 @@ namespace ProductosApp.Presentation
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInterfazPresentation";
             this.Text = "FrmInterfazPresentation";
             this.Load += new System.EventHandler(this.FrmInterfazPresentation_Load);
@@ -226,6 +241,7 @@ namespace ProductosApp.Presentation
             this.pnlFechayHora.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,5 +261,6 @@ namespace ProductosApp.Presentation
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer HoraYFecha;
         private System.Windows.Forms.Button BtnEstudiantes;
+        public System.Windows.Forms.PictureBox BtnCerrar;
     }
 }
