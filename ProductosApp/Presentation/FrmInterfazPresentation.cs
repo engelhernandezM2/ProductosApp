@@ -55,5 +55,10 @@ namespace ProductosApp.Presentation
             var container = builder.Build();
             AbrirFrmHijo(new FrmGestionEmpleado(container.Resolve<IEmpleadoServicio>()));
         }
+
+        private void BtnEstudiantes_Click(object sender, EventArgs e)
+        {
+            AbrirFrmHijo(new FrmEStudiantes());
+        }
     }
 }

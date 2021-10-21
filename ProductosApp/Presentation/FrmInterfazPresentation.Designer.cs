@@ -35,9 +35,10 @@ namespace ProductosApp.Presentation
             this.PnlBotones = new System.Windows.Forms.Panel();
             this.btnEmpleado = new System.Windows.Forms.Button();
             this.BtnProductos = new System.Windows.Forms.Button();
+            this.BtnEstudiantes = new System.Windows.Forms.Button();
             this.pnlFechayHora = new System.Windows.Forms.Panel();
-            this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
@@ -46,6 +47,7 @@ namespace ProductosApp.Presentation
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PnlBotones.SuspendLayout();
             this.pnlFechayHora.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +56,6 @@ namespace ProductosApp.Presentation
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Controls.Add(this.PnlBotones);
-            this.flowLayoutPanel1.Controls.Add(this.pnlFechayHora);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -78,9 +79,10 @@ namespace ProductosApp.Presentation
             this.PnlBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.PnlBotones.Controls.Add(this.btnEmpleado);
             this.PnlBotones.Controls.Add(this.BtnProductos);
+            this.PnlBotones.Controls.Add(this.BtnEstudiantes);
             this.PnlBotones.Location = new System.Drawing.Point(3, 110);
             this.PnlBotones.Name = "PnlBotones";
-            this.PnlBotones.Size = new System.Drawing.Size(172, 100);
+            this.PnlBotones.Size = new System.Drawing.Size(172, 150);
             this.PnlBotones.TabIndex = 1;
             // 
             // btnEmpleado
@@ -121,41 +123,61 @@ namespace ProductosApp.Presentation
             this.BtnProductos.UseVisualStyleBackColor = false;
             this.BtnProductos.Click += new System.EventHandler(this.BtnProductos_Click);
             // 
+            // BtnEstudiantes
+            // 
+            this.BtnEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.BtnEstudiantes.FlatAppearance.BorderSize = 0;
+            this.BtnEstudiantes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEstudiantes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEstudiantes.ForeColor = System.Drawing.SystemColors.Window;
+            this.BtnEstudiantes.Image = global::ProductosApp.Properties.Resources.clientes;
+            this.BtnEstudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEstudiantes.Location = new System.Drawing.Point(9, 100);
+            this.BtnEstudiantes.Name = "BtnEstudiantes";
+            this.BtnEstudiantes.Size = new System.Drawing.Size(163, 52);
+            this.BtnEstudiantes.TabIndex = 6;
+            this.BtnEstudiantes.Text = "Estudiantes";
+            this.BtnEstudiantes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnEstudiantes.UseVisualStyleBackColor = false;
+            this.BtnEstudiantes.Click += new System.EventHandler(this.BtnEstudiantes_Click);
+            // 
             // pnlFechayHora
             // 
             this.pnlFechayHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.pnlFechayHora.Controls.Add(this.lblFecha);
             this.pnlFechayHora.Controls.Add(this.lblHora);
-            this.pnlFechayHora.Location = new System.Drawing.Point(3, 216);
+            this.pnlFechayHora.Controls.Add(this.lblFecha);
+            this.pnlFechayHora.Location = new System.Drawing.Point(3, 3);
             this.pnlFechayHora.Name = "pnlFechayHora";
-            this.pnlFechayHora.Size = new System.Drawing.Size(172, 100);
+            this.pnlFechayHora.Size = new System.Drawing.Size(343, 36);
             this.pnlFechayHora.TabIndex = 4;
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(9, 65);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(72, 23);
-            this.lblFecha.TabIndex = 3;
-            this.lblFecha.Text = "label1";
             // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(7, 11);
+            this.lblHora.Location = new System.Drawing.Point(15, 4);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(96, 33);
+            this.lblHora.Size = new System.Drawing.Size(72, 23);
             this.lblHora.TabIndex = 2;
             this.lblHora.Text = "label1";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(138, 10);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(52, 19);
+            this.lblFecha.TabIndex = 3;
+            this.lblFecha.Text = "label1";
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.flowLayoutPanel2.Controls.Add(this.pnlFechayHora);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(175, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -202,6 +224,7 @@ namespace ProductosApp.Presentation
             this.PnlBotones.ResumeLayout(false);
             this.pnlFechayHora.ResumeLayout(false);
             this.pnlFechayHora.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -221,5 +244,6 @@ namespace ProductosApp.Presentation
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer HoraYFecha;
+        private System.Windows.Forms.Button BtnEstudiantes;
     }
 }
